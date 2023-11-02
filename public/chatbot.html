@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>[Template] Sample Inner Page</title>
+  <title>Cutinuous - Chatbot</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,13 +28,66 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .iframe-container {
+      display: flex;
+      /* Use flexbox to center the iframe */
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically */
+      height: 500px;
+      /* Ensure the container takes the full height of its parent */
+    }
+
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+
+      /* Add rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Add a shadow */
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 10px;
+      /* Adjust the top position as needed */
+      right: 10px;
+      /* Adjust the right position as needed */
+      background-color: rgb(248, 169, 169);
+      /* Background color for the overlay */
+      color: rgb(0, 0, 0);
+      /* Text color */
+      width: 100%;
+      border-radius: 2px;
+      /* Rounded corners for the overlay */
+      font-size: 17px;
+      /* Adjust the font size as needed */
+      pointer-events: inherit;
+      /* Allows clicks to pass through the overlay to the iframe */
+      margin-top: 70px;
+      margin-right: -10px;
+    }
+
+    .resizer {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      resize: both;
+      overflow: hidden
+    }
+
+    .resizer>.resized {
+      flex-grow: 1;
+      margin: 0;
+      padding: 0;
+      border: 0
+    }
+  </style>
+
 </head>
 
 <body>
@@ -45,72 +98,45 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Yummy<span>.</span></h1>
+        <img src="assets/img/logo.png" alt="">
+        <!--<h1>Yummy<span>.</span></h1>-->
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#chefs">Chefs</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><a href="buy.html">Buy</a></li>
         </ul>
       </nav><!-- .navbar -->
 
-      <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
+      <a class="btn-book-a-table" href="chatbot.html">Chatbot</a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
   </header><!-- End Header -->
 
+
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Sample Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Sample Inner Page</li>
-          </ol>
-        </div>
-
-      </div>
-    </div><!-- End Breadcrumbs -->
-
-    <section class="sample-page">
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu  section-bg">
       <div class="container" data-aos="fade-up">
 
-        <p>
-          You can duplicate this sample page and create any number of inner pages you like!
-        </p>
+        <div class="section-header">
+          <br>
+          <p>Cutinuous <span>Chatbot</span></p>
+        </div>
+        <div class="container align-items-center justify-content-center" style="border-width: 20px; border-color: blackß;">
+          <div class="iframe-container  resizer ">
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/b96ab70f-4d47-4437-8e18-83b44c86449e">
+            </iframe>
+          </div>
 
-      </div>
-    </section>
+        </div>
+         </div>
+    </section><!-- End Menu Section -->
 
   </main><!-- End #main -->
 
@@ -169,13 +195,6 @@
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 

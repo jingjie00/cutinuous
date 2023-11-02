@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Cutinuous - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+  <script
+  src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet"
+  href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <!--<h1>Yummy<span>.</span></h1>-->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><a href="buy.html">Buy</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="chatbot.html">Chatbot</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <img src="assets/img/header.png" style="width: 300px; " alt="Header Image"/>
+          <h2 data-aos="fade-up">Where The Love Never Disappears, It Transferring!
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="100">Get a cheaper second hand product here.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="assets/img/hero-img.png" width="60%%" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+      
+
+    <div id="firebaseui-auth-container"></div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Cutinuous</span>. </strong>All Rights Reserved
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <!-- Template Main JS File -->
+ <script src="assets/js/main.js"></script>
+
+ <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+ <script>
+   document.addEventListener('DOMContentLoaded', function() {
+//clear local storage
+localStorage.setItem('carbonCredit', 0.3);
+  });
+  </script>
+</script>
+ <script type="module">
+  const firebaseConfig = {
+    apiKey: "AIzaSyBkK07p9T9FeNyPPGT4IULOgeWBI-bl59I",
+    authDomain: "cutinuous.firebaseapp.com",
+    projectId: "cutinuous",
+    storageBucket: "cutinuous.appspot.com",
+    messagingSenderId: "644150088530",
+    appId: "1:644150088530:web:520704e31a20d28190a08b",
+    measurementId: "G-6PZKBJW0QF"
+  };
+   // Initialize Firebase
+   const app = firebase.initializeApp(firebaseConfig);
+   const analytics = firebase.analytics(app);
+   const auth = firebase.auth(app);
+
+   console.log(auth);
+
+   var ui = new firebaseui.auth.AuthUI(auth);
+
+   var uiConfig = {
+     callbacks: {
+       signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+         // User successfully signed in.
+         // Return type determines whether we continue the redirect automatically
+         // or whether we leave that to developer to handle.
+         return true;
+       },
+       uiShown: function () {
+         // The widget is rendered.
+         // Hide the loader.
+         document.getElementById('loader').style.display = 'none';
+       }
+     },
+     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+     signInFlow: 'popup',
+     autoUpgradeAnonymousUsers: true,
+     signInSuccessUrl: './buy.html',
+     signInOptions: [
+       // Leave the lines as is for the providers you want to offer your users.
+       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+       firebase.auth.EmailAuthProvider.PROVIDER_ID
+     ],
+     // Terms of service url.
+     tosUrl: 'privacy.html',
+     // Privacy policy url.
+     privacyPolicyUrl: 'privacy.html'
+   };
+
+   ui.start('#firebaseui-auth-container', uiConfig);
+
+ </script>
+
+</body>
+
+</html>

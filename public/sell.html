@@ -71,7 +71,7 @@
           </div>
           <div class="row">
 
-            <form>
+            <form id="myform">
               <div class="row">
                 <div
                   class="form-group d-flex justify-content-center align-items-center">
@@ -119,8 +119,32 @@
                   placeholder="Enter description" required></textarea>
               </div>
               <br>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
             </form>
+
+            <div class="modal fade" id="sellConfirm" tabindex="-1"
+              aria-labelledby="sellConfirmLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="sellConfirmLabel">Sent deal</h5>
+                    <button type="button" class="btn-close"
+                      data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body"
+                    style="background-color: rgb(212, 212, 212);">
+                    Your purchace will be completed once the owner accept your
+                    deal. We will notify you via email or push notification.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success"
+                      data-bs-dismiss="modal">Done</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -238,7 +262,19 @@
     };
 
 
+    var form = document.getElementById("myform");
 
+// Add a submit event listener to the form
+form.addEventListener("submit", function(event) {
+  // Prevent the default form submission
+  event.preventDefault();
+  var myModal = document.getElementById('sellConfirm');
+  var modal = new bootstrap.Modal(myModal);
+  modal.show();
+  
+  // Reset the form fields
+  form.reset();
+});
 
   </script>
 
